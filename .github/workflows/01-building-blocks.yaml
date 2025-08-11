@@ -7,7 +7,7 @@ concurrency:
 
 jobs:
  Say_hello:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
 
         -   run: echo "hello world"
