@@ -1,6 +1,10 @@
 name: 01 - Building Blocks
 on: [push, workflow_dispatch]
 
+concurrency:
+  group: my-deploy-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
  Say_hello:
     runs-on: ubuntu_latest
