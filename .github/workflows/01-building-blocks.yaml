@@ -15,6 +15,11 @@ jobs:
             run:    |
                 echo: "i will fail"
                 exit 1
+        -   name: Say Goodbye
+
+            run:
+                echo "say goodbye"
+           
 
         
 
